@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="com.example.lg.cbnu_library.Beacon" />
+
+        <variable
+            name="beacon"
+            type="com.example.lg.cbnu_library.Beacon" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/beacon_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@{beacon.name}"/>
+
+        <TextView
+            android:id="@+id/beacon_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/beacon_name"
+            android:text="@{beacon.address}"/>
+
+        <TextView
+            android:id="@+id/beacon_rssi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@{beacon.rssi}"/>
+
+
+    </RelativeLayout>
+</layout>

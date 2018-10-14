@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/seat_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="좌석번호 : 1번 좌석"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="종료시간 : 04:28"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/extension_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="연장"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/exit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="퇴실"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+</layout>

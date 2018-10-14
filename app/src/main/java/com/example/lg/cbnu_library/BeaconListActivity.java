@@ -62,6 +62,14 @@ public class BeaconListActivity extends AppCompatActivity {
             Log.d(TAG, name + " / " + address + " : " + rssi);
             Beacon beacon = new Beacon(name, address, rssi);
             adapter.addBeacon(beacon);
+
+            Beacon nearestBeacon = binding.nearestBeacon.getBeacon();
+            if (nearestBeacon == null) nearestBeacon = beacon;
+            if (Math.abs(Integer.parseInt(nearestBeacon.getRssi())) > Math.abs(Integer.parseInt(beacon.getRssi())))
+                nearestBeacon = beacon;
+
+            binding.nearestBeacon.setBeacon(nearestBeacon);
+
             super.onScanResult(callbackType, result);
         }
 
