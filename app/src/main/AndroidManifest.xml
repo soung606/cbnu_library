@@ -14,7 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".seat_management.SelectLibraryActivity">
+        <activity android:name=".view.select_library.SelectLibraryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,10 +22,10 @@
             </intent-filter>
         </activity>
 
-        <!--<activity android:name=".seat_management.SelectLibraryActivity" />-->
-        <activity android:name=".seat_management.SelectSeatActivity" />
-        <activity android:name=".seat_management.StatusActivity" />
+        <activity android:name=".view.select_seat.SelectSeatActivity" />
+        <activity android:name=".view.status.StatusActivity" />
 
+        <service android:name=".view.status.BeaconSearchService" />
     </application>
 
 </manifest>

@@ -7,9 +7,15 @@ public class Library implements Serializable {
     private String name;
     private int seatCount;
 
+    public Library(int id, String name, int seatCount) {
+        this.id = id;
+        this.name = name;
+        this.seatCount = seatCount;
+    }
+
     @Override
     public String toString() {
-        return id + name + seatCount;
+        return id + ":" + name + "/" + seatCount;
     }
 
     public int getId() {

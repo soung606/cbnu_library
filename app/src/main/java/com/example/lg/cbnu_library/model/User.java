@@ -7,6 +7,14 @@ public class User {
     private String name;
     private int penalty;
 
+    public User(int id, String email, String password, String name, int penalty) {
+        this.id = id;
+        this.email = email;
+        this.password = password;
+        this.name = name;
+        this.penalty = penalty;
+    }
+
     public int getId() {
         return id;
     }
